@@ -39,7 +39,7 @@ export default function Navbar() {
           {/* Auth Buttons (Desktop) */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
-              href="/login"
+              href="/signin"
               className="text-gray-900 hover:text-blue-600 font-medium drop-shadow-md"
             >
               Login
@@ -80,7 +80,7 @@ export default function Navbar() {
             <hr className="border-white/30" />
 
             <Link
-              href="/login"
+              href="/signin"
               onClick={() => setIsOpen(false)}
               className="block text-gray-900 font-medium drop-shadow-md"
             >
