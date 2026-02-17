@@ -33,12 +33,12 @@ export default function Hero() {
             {/* CTA buttons */}
             <div className="flex flex-wrap gap-4">
               <Link href="/#find-doctors">
-                <Button className="bg-blue-500 hover:bg-blue-700 text-white px-8 py-4 lg:px-10 lg:py-8 rounded-xl font-semibold text-lg shadow-lg shadow-blue-600/30 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                <Button className="bg-blue-500 cursor-pointer hover:bg-blue-700 text-white px-8 py-4 lg:px-10 lg:py-8 rounded-xl font-semibold text-lg shadow-lg shadow-blue-600/30 transition-all duration-300 hover:scale-105 hover:shadow-xl">
                   Book an Appointment
                 </Button>
               </Link>
               <Link href="how-it-works">
-              <Button className="bg-white hover:bg-gray-50 text-gray-900 lg:text-gray-900 px-8 lg:px-10 py-4 lg:py-8 rounded-xl font-semibold text-lg shadow-md border border-gray-200 transition-all duration-300 hover:scale-105">
+              <Button className="bg-white cursor-pointer hover:bg-gray-50 text-gray-900 lg:text-gray-900 px-8 lg:px-10 py-4 lg:py-8 rounded-xl font-semibold text-lg shadow-md border border-gray-200 transition-all duration-300 hover:scale-105">
                 How It Works
               </Button>
               </Link>

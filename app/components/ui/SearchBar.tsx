@@ -97,7 +97,7 @@ const SearchBar = () => {
           <div className="flex items-center px-3 py-3 lg:py-0">
             <Button
               onClick={handleSearch}
-              className="bg-blue-600/90 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 whitespace-nowrap w-full lg:w-auto drop-shadow-md"
+              className="bg-blue-600/90 cursor-pointer hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 whitespace-nowrap w-full lg:w-auto drop-shadow-md"
               type="button"
             >
               Search

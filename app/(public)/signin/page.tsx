@@ -3,13 +3,16 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function PortalSelection() {
-    const router = useRouter();
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-4">
       {/* Header Section */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-extrabold uppercase text-slate-900">
-          Sign into <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600">Bluemed</span>
+          Sign into{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600">
+            Bluemed
+          </span>
         </h1>
         <p className="text-slate-500 mt-3 text-lg">
           Choose how you want to access the platform
@@ -19,7 +22,7 @@ export default function PortalSelection() {
       {/* Card Container */}
       <div className="grid md:grid-cols-2 gap-6 w-full max-w-4xl">
         {/* Patient Portal Card */}
-        <button onClick={()=>router.push("/patient/login")} className="group block">
+        <Link href="/auth/patient/login" className="group block">
           <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:border-blue-500 transition-all duration-300 h-full flex flex-col items-center text-center">
             <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
               {/* Patient Icon (User SVG) */}
@@ -48,10 +51,10 @@ export default function PortalSelection() {
               Continue as Patient
             </div>
           </div>
-        </button>
+        </Link>
 
         {/* Doctor Portal Card */}
-        <Link href="/doctor/login" className="group block">
+        <Link href="/auth/doctor/login" className="group block">
           <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:border-indigo-500 transition-all duration-300 h-full flex flex-col items-center text-center">
             <div className="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
               {/* Doctor Icon (Stethoscope/Medical SVG) */}

@@ -33,7 +33,7 @@ const Card = ({ image, name, specialty, rating, availableToday }: DoctorCardProp
         </span>
       )}
       
-      <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200">
+      <button className="w-full cursor-pointer bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200">
         Book Appointment
       </button>
     </div>
