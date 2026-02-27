@@ -47,7 +47,7 @@ export default function PortalSelection() {
             <p className="mt-4 text-slate-500 leading-relaxed">
               Book appointments, manage visits, and access your medical records.
             </p>
-            <div className="mt-8 px-6 py-2.5 bg-blue-500 text-white rounded-full font-medium hover:bg-blue-600 transition-colors">
+            <div className="mt-8 px-6 py-2.5 bg-blue-500 cursor-pointer text-white rounded-full font-medium hover:bg-blue-700 shadow-lg shadow-blue-600/30 transition-all duration-300 hover:scale-105 hover:shadow-xl">
               Continue as Patient
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function PortalSelection() {
               Manage clinical appointments, patients, and your clinical
               schedule.
             </p>
-            <div className="mt-8 px-6 py-2.5 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors">
+            <div className="mt-8 px-6 py-2.5 bg-indigo-500 cursor-pointer text-white rounded-full font-medium hover:bg-indigo-700 shadow-lg shadow-indigo-600/30 transition-all duration-300 hover:scale-105 hover:shadow-xl">
               Continue as Doctor
             </div>
           </div>
